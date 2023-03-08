@@ -1,1 +1,1 @@
-# sm-student-registration-service
+# samarthanam-student-registration-service
