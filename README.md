@@ -1,0 +1,1 @@
+# sm-student-registration-service
