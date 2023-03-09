@@ -18,13 +18,13 @@ public class StudentController {
     @Autowired
     StudentRepository studentRepository;
 
-    @PostMapping("/create")
+    @PostMapping
     public ResponseEntity<?> createStudent(@Valid @RequestBody Student student) {
         Student studentResponse = studentRepository.save(student);
         return ResponseEntity.ok().body(studentResponse);
     }
 
-    @PostMapping("/update/{id}")
+    @PutMapping("/{id}")
     public ResponseEntity<?> updateStudent(@Valid @RequestBody Student student,@PathVariable Long id) {
         Student studentResponse = null;
         Optional<Student> student1 = studentRepository.findById(id);
