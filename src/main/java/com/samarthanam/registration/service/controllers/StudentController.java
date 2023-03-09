@@ -11,7 +11,7 @@ import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
 
-@CrossOrigin(origins= {"http://localhost:4200","https://sm-angular-ui.herokuapp.com"}, maxAge = 4800, allowCredentials = "true" )
+@CrossOrigin(origins= {"http://localhost:4200","https://sm-angular-ui.herokuapp.com","https://samarthanam-registration-app.herokuapp.com"}, maxAge = 4800, allowCredentials = "true" )
 @RestController
 @RequestMapping("/api/students")
 public class StudentController {
