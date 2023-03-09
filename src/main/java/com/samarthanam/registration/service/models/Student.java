@@ -23,6 +23,10 @@ public class Student {
     @Size(max = 50)
     private String email;
 
+    @Size(max = 25)
+    private String enrollment;
+
+
     public Long getId() {
         return id;
     }
@@ -61,5 +65,13 @@ public class Student {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getEnrollment() {
+        return enrollment;
+    }
+
+    public void setEnrollment(String enrollment) {
+        this.enrollment = enrollment;
     }
 }
